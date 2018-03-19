@@ -5,7 +5,7 @@ UPDATE albums set sales = (sales*10);
 SELECT * from albums;
 
 SELECT "Albums released before 1980" AS "info";
-UPDATE albums set release_date = release_date - 1000;
+UPDATE albums set release_date = release_date - 100 where release_date<1980;
 SELECT * from albums WHERE release_date<1980;
 
 
