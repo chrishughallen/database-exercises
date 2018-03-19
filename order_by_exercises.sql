@@ -6,11 +6,13 @@ FROM employees
 WHERE (gender = 'm')
       and (first_name = 'Irena'
            or first_name = 'Vidya'
-           or first_name = 'Maya');
+           or first_name = 'Maya')
+ORDER BY first_name, last_name;
 
 SELECT *
 FROM employees
-WHERE last_name like 'e%';
+WHERE last_name like 'e%'
+ORDER BY emp_no DESC;
 
 SELECT *
 FROM employees
@@ -30,7 +32,8 @@ WHERE last_name like 'e%' or last_name like '%e';
 
 SELECT *
 FROM employees
-WHERE hire_date like '199%' and birth_date like '%-12-25';
+WHERE hire_date like '199%' and birth_date like '%-12-25'
+ORDER BY birth_date DESC, hire_date ASC;
 
 SELECT *
 FROM employees
