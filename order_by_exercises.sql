@@ -26,7 +26,7 @@ WHERE last_name like ('%q%');
 
 SELECT *
 FROM employees
-WHERE last_name like 'e%' or last_name like '%e';
+WHERE last_name like 'e%e';
 
 SELECT *
 FROM employees
